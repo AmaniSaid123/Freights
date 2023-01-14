@@ -17,4 +17,15 @@ $factory->define(Brackets\AdminAuth\Models\AdminUser::class, function (Faker\Gen
         'last_login_at' => $faker->dateTime,
         
     ];
+});/** @var \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\Translatable::class, static function (Faker\Generator $faker) {
+    return [
+        'title' => $faker->sentence,
+        'perex' => $faker->text(),
+        'published_at' => $faker->date(),
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
 });

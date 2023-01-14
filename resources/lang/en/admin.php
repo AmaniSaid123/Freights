@@ -30,5 +30,24 @@ return [
         ],
     ],
 
+    'translatable' => [
+        'title' => 'Translatable',
+
+        'actions' => [
+            'index' => 'Translatable',
+            'create' => 'New Translatable',
+            'edit' => 'Edit :name',
+            'will_be_published' => 'Translatable will be published at',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'title' => 'Title',
+            'perex' => 'Perex',
+            'published_at' => 'Published at',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];
